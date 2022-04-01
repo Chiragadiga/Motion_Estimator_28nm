@@ -1,0 +1,42 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : Switch
+Version: S-2021.06-SP4
+Date   : Mon Dec 20 22:56:20 2021
+****************************************
+
+
+  Startpoint: pe_u/pe3/Rpipe_reg[0]
+               (rising edge-triggered flip-flop clocked by ideal_clk)
+  Endpoint: pe_u/pe4/Rpipe_reg[0]
+               (rising edge-triggered flip-flop clocked by ideal_clk)
+  Path Group: ideal_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock ideal_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pe_u/pe3/Rpipe_reg[0]/CLK (DFFX1_LVT)                   0.00       0.00 r
+  pe_u/pe3/Rpipe_reg[0]/Q (DFFX1_LVT)                     0.05 &     0.05 r
+  pe_u/pe4/Rpipe_reg[0]/D (DFFX1_LVT)                     0.00 &     0.05 r
+  data arrival time                                                  0.05
+
+  clock ideal_clk (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  pe_u/pe4/Rpipe_reg[0]/CLK (DFFX1_LVT)                              0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  ------------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1

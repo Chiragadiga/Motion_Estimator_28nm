@@ -1,0 +1,109 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Switch
+Version: O-2018.06-SP4
+Date   : Mon Dec 20 17:27:58 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed32lvt_ff1p16v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff1p16v125c.db)
+    saed32hvt_ff1p16v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff1p16v125c.db)
+
+
+Operating Conditions: ff1p16v125c   Library: saed32hvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Switch                 8000              saed32hvt_ff1p16v125c
+control                8000              saed32hvt_ff1p16v125c
+PEtotal                8000              saed32hvt_ff1p16v125c
+Comparator             8000              saed32hvt_ff1p16v125c
+control_DW01_inc_0     ForQA             saed32hvt_ff1p16v125c
+PE_0                   8000              saed32hvt_ff1p16v125c
+PE_14                  8000              saed32hvt_ff1p16v125c
+PE_13                  8000              saed32hvt_ff1p16v125c
+PE_12                  8000              saed32hvt_ff1p16v125c
+PE_11                  8000              saed32hvt_ff1p16v125c
+PE_10                  8000              saed32hvt_ff1p16v125c
+PE_9                   8000              saed32hvt_ff1p16v125c
+PE_8                   8000              saed32hvt_ff1p16v125c
+PE_7                   8000              saed32hvt_ff1p16v125c
+PE_6                   8000              saed32hvt_ff1p16v125c
+PE_5                   8000              saed32hvt_ff1p16v125c
+PE_4                   8000              saed32hvt_ff1p16v125c
+PE_3                   8000              saed32hvt_ff1p16v125c
+PE_2                   8000              saed32hvt_ff1p16v125c
+PE_1                   8000              saed32hvt_ff1p16v125c
+PEend                  ForQA             saed32hvt_ff1p16v125c
+PE_0_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_0_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_14_DW01_add_0       ForQA             saed32hvt_ff1p16v125c
+PE_14_DW01_sub_1       ForQA             saed32hvt_ff1p16v125c
+PE_13_DW01_add_0       ForQA             saed32hvt_ff1p16v125c
+PE_13_DW01_sub_1       ForQA             saed32hvt_ff1p16v125c
+PE_12_DW01_add_0       ForQA             saed32hvt_ff1p16v125c
+PE_12_DW01_sub_1       ForQA             saed32hvt_ff1p16v125c
+PE_11_DW01_add_0       ForQA             saed32hvt_ff1p16v125c
+PE_11_DW01_sub_1       ForQA             saed32hvt_ff1p16v125c
+PE_10_DW01_add_0       ForQA             saed32hvt_ff1p16v125c
+PE_10_DW01_sub_1       ForQA             saed32hvt_ff1p16v125c
+PE_9_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_9_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_8_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_8_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_7_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_7_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_6_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_6_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_5_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_5_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_4_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_4_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_3_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_3_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_2_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_2_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PE_1_DW01_add_0        ForQA             saed32hvt_ff1p16v125c
+PE_1_DW01_sub_1        ForQA             saed32hvt_ff1p16v125c
+PEend_DW01_add_0       ForQA             saed32hvt_ff1p16v125c
+PEend_DW01_sub_1       ForQA             saed32hvt_ff1p16v125c
+
+
+Global Operating Voltage = 1.16 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  52.6679 uW  (100%)
+                         ---------
+Total Dynamic Power    =  52.6679 uW  (100%)
+
+Cell Leakage Power     = 120.4885 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            8.4974        3.9471e+07           47.9688  (  27.70%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           44.1705        8.1017e+07          125.1876  (  72.30%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        52.6679 uW     1.2049e+08 pW       173.1564 uW
+1

@@ -1,0 +1,9 @@
+./outputs/parasitics.max_125.spef for scenarios: 
+	 scenario: max, corner type: late/early
+
+./outputs/parasitics.min_125.spef for scenarios: 
+	 scenario: min, corner type: late
+
+./outputs/parasitics.min_-40.spef for scenarios: 
+	 scenario: min, corner type: early
+

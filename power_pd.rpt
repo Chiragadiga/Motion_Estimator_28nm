@@ -1,0 +1,76 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : Switch
+Version: S-2021.06-SP1
+Date   : Mon Dec 20 22:14:08 2021
+****************************************
+Information: Activity propagation will be performed for scenario max.
+Information: Doing activity propagation for mode 'default' and corner 'max' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario max (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+
+ **** Information : No. of simulation cycles = 6 ****
+Information: The stitching and editing of coupling caps is turned OFF for design 'estimator:estimator.design'. (TIM-125)
+Information: Design estimator has 1494 nets, 0 global routed, 1492 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'Switch'. (NEX-022)
+---extraction options---
+Corner: max
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: estimator 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 1490 nets are successfully extracted. (NEX-028)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1490, routed nets = 1490, across physical hierarchy nets = 0, parasitics cached nets = 1490, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Mode: default
+Corner: max
+Scenario: max
+Voltage: 1.16
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = 0.00e+00 pW (  0.0%)
+  Net Switching Power    = 7.52e+07 pW (100.0%)
+Total Dynamic Power      = 7.52e+07 pW (100.0%)
+
+Cell Leakage Power       = 1.20e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+register                  0.00e+00               1.51e+07               3.95e+07               5.46e+07    ( 27.9%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             0.00e+00               6.00e+07               8.10e+07               1.41e+08    ( 72.1%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     0.00e+00 pW            7.52e+07 pW            1.20e+08 pW            1.96e+08 pW
+1
